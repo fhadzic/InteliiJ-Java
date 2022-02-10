@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.geometry.Insets?>
+
+
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<GridPane alignment="CENTER" vgap="10" hgap="10"
+          xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+
+    <padding>
+        <Insets bottom="5" left="5" right="5" top="5" />
+    </padding>
+
+    <stylesheets>
+        <URL value="@../css/valdacija.css" />
+    </stylesheets>
+
+    <Label text="Naziv: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="fieldNaziv" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Glavni grad: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <ChoiceBox fx:id="choiceGrad" maxWidth="Infinity" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <ButtonBar GridPane.rowIndex="2" GridPane.columnIndex="1">
+        <buttons>
+            <Button fx:id="btnOk" onAction="#actionOk" mnemonicParsing="false" text="Ok"/>
+            <Button fx:id="btnCancel" onAction="#actionCancel" mnemonicParsing="false" text="Cancel"/>
+        </buttons>
+    </ButtonBar>
+
+</GridPane>

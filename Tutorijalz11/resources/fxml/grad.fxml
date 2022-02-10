@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <padding>
+        <Insets bottom="5" left="5" right="5" top="5" />
+    </padding>
+
+    <stylesheets>
+        <URL value="@../css/valdacija.css" />
+    </stylesheets>
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+
+    <Label text="%name_city" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="%population_city" GridPane.rowIndex="1" />
+    <TextField fx:id="fieldBrojStanovnika" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Postanski broj:" GridPane.rowIndex="2" />
+    <TextField fx:id="fieldPost" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="%picture" GridPane.rowIndex="3" />
+    <TextField fx:id="fieldSlika" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label text="%country_city" GridPane.rowIndex="4" />
+    <ChoiceBox fx:id="choiceDrzava" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <buttons>
+            <Button fx:id="btnOk" mnemonicParsing="false" onAction="#actionOk" text="%ok" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#actionCancel" text="%cancle" />
+        </buttons>
+    </ButtonBar>
+
+   <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowSpan="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+
+    <Button fx:id="btnPromijeni" mnemonicParsing="false" onAction="#actionPromijeni" text="%change" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+</GridPane>

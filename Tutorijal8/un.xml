@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="12.0.2" class="java.beans.XMLDecoder">
+ <object class="ba.unsa.etf.rpr.tutorijal8.UN" id="UN0">
+  <void property="drzave">
+   <void method="add">
+    <object class="ba.unsa.etf.rpr.tutorijal8.Drzava">
+     <void property="brojStanovnika">
+      <int>3500000</int>
+     </void>
+     <void property="glavniGrad">
+      <object class="ba.unsa.etf.rpr.tutorijal8.Grad">
+       <void property="brojMjerenja">
+        <int>4</int>
+       </void>
+       <void property="brojStanovnika">
+        <int>400000</int>
+       </void>
+       <void property="naziv">
+        <string>Sarajevo</string>
+       </void>
+      </object>
+     </void>
+     <void property="jedinica">
+      <string>km2</string>
+     </void>
+     <void property="naziv">
+      <string>Bosna i Hercegovina</string>
+     </void>
+     <void property="povrsina">
+      <double>51129.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ba.unsa.etf.rpr.tutorijal8.Drzava">
+     <void property="brojStanovnika">
+      <int>350000</int>
+     </void>
+     <void property="glavniGrad">
+      <object class="ba.unsa.etf.rpr.tutorijal8.Grad">
+       <void property="brojStanovnika">
+        <int>40000</int>
+       </void>
+       <void property="naziv">
+        <string>Zagreb</string>
+       </void>
+      </object>
+     </void>
+     <void property="jedinica">
+      <string>km2</string>
+     </void>
+     <void property="naziv">
+      <string>Hrvatska</string>
+     </void>
+     <void property="povrsina">
+      <double>61129.0</double>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

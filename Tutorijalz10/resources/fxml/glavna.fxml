@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="TOP_CENTER" hgap="5" vgap="5"
+          xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <padding>
+        <Insets bottom="5" left="5" right="5" top="5" />
+    </padding>
+
+    <stylesheets>
+        <URL value="@../css/glavna.css" />
+    </stylesheets>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints/>
+    </columnConstraints>
+
+    <TableView fx:id="tableViewGradovi" GridPane.vgrow="ALWAYS"
+               GridPane.columnIndex="0" >
+        <columns>
+            <TableColumn fx:id="colGradId" text="ID" />
+            <TableColumn fx:id="colGradNaziv" text="Naziv" />
+            <TableColumn fx:id="colGradStanovnika" text="Stanovnika" />
+            <TableColumn fx:id="colGradDrzava" text="Država" />
+        </columns>
+
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+
+    </TableView>
+
+    <VBox prefHeight="200.0" prefWidth="120.0" spacing="5.0" GridPane.columnIndex="1">
+
+        <children>
+            <Button fx:id="btnDodajGrad" onAction="#actionDodajGrad" mnemonicParsing="false" maxWidth="Infinity" text="Dodaj grad"
+                GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Button fx:id="btnDodajDrzavu" onAction="#actionDodajDrzavu" mnemonicParsing="false" maxWidth="Infinity" text="Dodaj državu"
+                GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Button fx:id="btnIzmijeniGrad" onAction="#actionIzmijeniGrad" mnemonicParsing="false" maxWidth="Infinity" text="Izmijeni grad"
+                GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Button fx:id="btnObrisiGrad" onAction="#actionObrisiGrad" mnemonicParsing="false" maxWidth="Infinity" text="Obriši grad"
+                GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        </children>
+    </VBox>
+
+</GridPane>

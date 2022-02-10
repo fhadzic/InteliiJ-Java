@@ -1,0 +1,8 @@
+#equalsBtn{
+    -fx-background-color: lightpink;
+}
+
+#display{
+    -fx-background-color: lightgreen;
+    -fx-padding: 5px;
+}

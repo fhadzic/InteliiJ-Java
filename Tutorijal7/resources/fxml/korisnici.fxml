@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <padding>
+        <Insets bottom="5" left="5" right="5" top="5" />
+    </padding>
+
+    <stylesheets>
+        <URL value = "@../css/korisnici.css"/>
+    </stylesheets>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="40" />
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="20" />
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="15" />
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="15" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="16.66" vgrow="ALWAYS" />
+        <RowConstraints percentHeight="16.66" vgrow="ALWAYS" />
+        <RowConstraints percentHeight="16.66" vgrow="ALWAYS" />
+        <RowConstraints percentHeight="16.66" vgrow="ALWAYS" />
+        <RowConstraints percentHeight="16.66" vgrow="ALWAYS" />
+        <RowConstraints percentHeight="16.66" vgrow="ALWAYS" />
+    </rowConstraints>
+
+   <children>
+       <!--Column 0 -->
+      <ListView fx:id="listKorisnici" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="5" />
+       <!--Column 1-->
+      <Label maxWidth="Infinity" text="Ime:" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      <Label maxWidth="Infinity" text="Prezime:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label maxWidth="Infinity" text="E-mail:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label maxWidth="Infinity" text="Korisničko ime:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label maxWidth="Infinity" text="Lozinka:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+       <!--Column 2-->
+      <TextField fx:id="fldIme" styleClass="" maxWidth="Infinity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+      <TextField fx:id="fldPrezime" styleClass="" maxWidth="Infinity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <TextField fx:id="fldEmail" styleClass="" maxWidth="Infinity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <TextField fx:id="fldUser" styleClass="" maxWidth="Infinity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <PasswordField fx:id="fldPassword" maxWidth="Infinity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+      <Button fx:id="btnDodaj" maxWidth="Infinity" mnemonicParsing="false" onAction="#dodajKorisnika" text="Dodaj" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+       <!--Column 3-->
+      <Button fx:id="btnKraj" maxWidth="Infinity" mnemonicParsing="false" onAction="#zavrsiProgram" text="Kraj" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+   </children>
+</GridPane>

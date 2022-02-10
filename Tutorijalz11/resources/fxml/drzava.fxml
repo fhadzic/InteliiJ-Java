@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <padding>
+        <Insets bottom="5" left="5" right="5" top="5" />
+    </padding>
+
+    <stylesheets>
+        <URL value="@../css/valdacija.css" />
+    </stylesheets>
+
+    <Label text="%name_country" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="%capital_city" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="choiceGrad" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <buttons>
+            <Button fx:id="btnOk" mnemonicParsing="false" onAction="#actionOk" text="%ok" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#actionCancel" text="%cancle" />
+        </buttons>
+    </ButtonBar>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
